@@ -24,6 +24,8 @@ e = random.choice(cards)
 a = 0
 x = 22
 print('Your first result is: ',e)
+dlt=cards.index(e)
+del cards[dlt]
 # рисуем карту
 def card_picture(e):
     lines = [[] for i in range(9)]
@@ -69,6 +71,8 @@ a+=e
 if int(e) < int(x) and user_ask =='yes' or user_ask =='y' or user_ask == 'Yes' or user_ask == 'Y':
     e = random.choice(d)    
     print('your result is', e)
+    dlt=cards.index(e)
+    del cards[dlt]
     card_picture(e)
     e = card_value(e)
     a+=e
@@ -78,6 +82,8 @@ if int(e) < int(x) and user_ask =='yes' or user_ask =='y' or user_ask == 'Yes' o
         # второй бросок
         e = random.choice(d)
         print('your result is', e)
+        dlt=cards.index(e)
+        del cards[dlt]
         card_picture(e)
         e = card_value(e)
         a+=e
@@ -87,6 +93,8 @@ if int(e) < int(x) and user_ask =='yes' or user_ask =='y' or user_ask == 'Yes' o
              # третий бросок
              e = random.choice(d)
              print('your result is', e)
+             dlt=cards.index(e)
+             del cards[dlt]
              card_picture(e)
              e = card_value(e)
              a+=e
@@ -96,6 +104,8 @@ if int(e) < int(x) and user_ask =='yes' or user_ask =='y' or user_ask == 'Yes' o
                  # четвертый бросок
                  e = random.choice(d)
                  print('your result is', e)
+                 dlt=cards.index(e)
+                 del cards[dlt]
                  card_picture(e)
                  e = card_value(e)
                  a+=e
@@ -105,6 +115,8 @@ if int(e) < int(x) and user_ask =='yes' or user_ask =='y' or user_ask == 'Yes' o
                     # пятый бросок
                     e = random.choice(d)
                     print('your result is', e)
+                    dlt=cards.index(e)
+                    del cards[dlt]
                     card_picture(e)
                     e = card_value(e)
                     a+=e
@@ -114,6 +126,8 @@ if int(e) < int(x) and user_ask =='yes' or user_ask =='y' or user_ask == 'Yes' o
                        # шестой бросок
                        e = random.choice(d)
                        print('your result is', e)
+                       dlt=cards.index(e)
+                       del cards[dlt]
                        card_picture(e)
                        e = card_value(e)
                        a+=e
@@ -123,6 +137,8 @@ if int(e) < int(x) and user_ask =='yes' or user_ask =='y' or user_ask == 'Yes' o
                            # шестой бросок
                            e = random.choice(d)
                            print('your result is', e)
+                           dlt=cards.index(e)
+                           del cards[dlt]
                            card_picture(e)
                            e = card_value(e)
                            a+=e
@@ -140,6 +156,8 @@ print('The final result is: ', a)
 a=0
 e=0
 e = random.choice(d)
+dlt=cards.index(e)
+del cards[dlt]
 card_picture(e)
 e = card_value(e)
 a = e
@@ -149,6 +167,8 @@ user_ask = input('yet? Yes or No ')
 if e < x and user_ask =='yes':
     e = random.choice(d)
     print('your result is', e)
+    dlt=cards.index(e)
+    del cards[dlt]
     card_picture(e)
     e = card_value(e)
     a+=e
@@ -158,6 +178,8 @@ if e < x and user_ask =='yes':
         # второй бросок
         e = random.choice(d)
         print('your result is', e)
+        dlt=cards.index(e)
+        del cards[dlt]
         card_picture(e)
         e = card_value(e)
         a+=e
@@ -167,6 +189,8 @@ if e < x and user_ask =='yes':
              # третий бросок
              e = random.choice(d)
              print('your result is', e)
+             dlt=cards.index(e)
+             del cards[dlt]
              card_picture(e)
              e = card_value(e)
              a+=e
@@ -176,6 +200,8 @@ if e < x and user_ask =='yes':
                  # четвертый бросок
                  e = random.choice(d)
                  print('your result is', e)
+                 dlt=cards.index(e)
+                 del cards[dlt]
                  card_picture(e)
                  e = card_value(e)
                  a+=e
@@ -185,6 +211,8 @@ if e < x and user_ask =='yes':
                     # пятый бросок
                     e = random.choice(d)
                     print('your result is', e)
+                    dlt=cards.index(e)
+                    del cards[dlt]
                     card_picture(e)
                     e = card_value(e)
                     a+=e
@@ -194,6 +222,8 @@ if e < x and user_ask =='yes':
                        # шестой бросок
                        e = random.choice(d)
                        print('your result is', e)
+                       dlt=cards.index(e)
+                       del cards[dlt]
                        card_picture(e)
                        e = card_value(e)
                        a+=e
@@ -203,6 +233,8 @@ if e < x and user_ask =='yes':
                            # шестой бросок
                            e = random.choice(d)
                            print('your result is', e)
+                           dlt=cards.index(e)
+                           del cards[dlt]
                            card_picture(e)
                            e = card_value(e)
                            a+=e
